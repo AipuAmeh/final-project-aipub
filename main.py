@@ -13,6 +13,7 @@ def get_rsv_data():
 
 get_rsv_data()
 # Question A: At what weeks are these disparities most pronounced? 
+# weeks show where the percentage of women who were vaccinated are 0
 def weekly_disparities():
     data_file = get_rsv_data()
     weekly_disparities_list = []
@@ -26,18 +27,30 @@ def weekly_disparities():
                 "demographic": item.get("demographic"),
                 "num_pregnant_women": item.get("denominator")
             })
-    weekly_disparities_df =  pd.DataFrame(weekly_disparities_list)
+    weekly_disparities_df = pd.DataFrame(weekly_disparities_list)
     weekly_disparities_df["week_ending_date"] = pd.to_datetime(weekly_disparities_df["week_ending_date"])
     weekly_disparities_df.columns = ["Week_Ending_Date", "Demographics", "Num_Pregnant_Women"]
     print(weekly_disparities_df)
         
-weekly_disparities()
+# weekly_disparities()
 
 
 # Question B: What does it look like over time? 
-# line graph showing weeks and percentage of women in each racial group?
+def over_time():
+    data_file = get_rsv_data()
+    disparities_over_time = []
+    for item in data_file:
+        disparities_over_time.append({
+            "week_ending_date": item.get("week_ending_date"),
+            "percent_vaccinated": item.get("cover_estimate"),
+            "demographic": item.get("demographic")
+        })
+    disparities_over_time_df = pd.DataFrame(disparities_over_time)
+    disparities_over_time_df["week_ending_date"] = pd.to_datetime(disparities_over_time_df["week_ending_date"])
+    disparities_over_time_df.columns = ["Week_Ending_Date","Percent_Vaccinated", "Demographics"]
+    print(disparities_over_time_df)
 
-
+over_time()
 # Question C: What is breakdown of racial groups?
 # show piechart of race/ethnicity
 
