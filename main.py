@@ -30,7 +30,6 @@ def weekly_disparities():
     weekly_disparities_df = pd.DataFrame(weekly_disparities_list)
     weekly_disparities_df["week_ending_date"] = pd.to_datetime(weekly_disparities_df["week_ending_date"])
     weekly_disparities_df.columns = ["Week_Ending_Date", "Demographics", "Num_Pregnant_Women"]
-    print(weekly_disparities_df)
         
 # weekly_disparities()
 
@@ -48,9 +47,43 @@ def over_time():
     disparities_over_time_df = pd.DataFrame(disparities_over_time)
     disparities_over_time_df["week_ending_date"] = pd.to_datetime(disparities_over_time_df["week_ending_date"])
     disparities_over_time_df.columns = ["Week_Ending_Date","Percent_Vaccinated", "Demographics"]
-    print(disparities_over_time_df)
 
-over_time()
-# Question C: What is breakdown of racial groups?
+# over_time()
+
+# Question C: What is breakdown of racial groups included in study?
 # show piechart of race/ethnicity
+def demographics_breakdown():
+    data_file = get_rsv_data()
+    asian = []
+    pacific_island = []
+    black = []
+    native = []
+    white = []
+    hispanic = []
+    unknown = []
+    
+    for item in data_file:
+        race = item.get("demographic")
+        match race:
+            case _ if race.startswith("Black"):
+                black.append(item.get("denominator"))
+            case _ if race.startswith("American"):
+                native.append(item.get("denominator"))
+            case _ if race.startswith("Asian"):
+                asian.append(item.get("denominator"))
+            case _ if race.startswith("Hispanic"):
+                hispanic.append(item.get("denominator"))
+            case _ if race.startswith("White"):
+                white.append(item.get("denominator"))
+            case _ if race.startswith("Native"):
+                pacific_island.append("denominator")
+            case _:
+                unknown.append("denominator")
+    
+       
+   
+        
+
+demographics_breakdown()
+
 
