@@ -31,7 +31,7 @@ def weekly_disparities():
     weekly_disparities_df["week_ending_date"] = pd.to_datetime(weekly_disparities_df["week_ending_date"])
     weekly_disparities_df.columns = ["Week_Ending_Date", "Demographics", "Num_Pregnant_Women"]
         
-# weekly_disparities()
+weekly_disparities()
 
 
 # Question B: What does it look like over time? 
@@ -48,7 +48,7 @@ def over_time():
     disparities_over_time_df["week_ending_date"] = pd.to_datetime(disparities_over_time_df["week_ending_date"])
     disparities_over_time_df.columns = ["Week_Ending_Date","Percent_Vaccinated", "Demographics"]
 
-# over_time()
+over_time()
 
 # Question C: What is breakdown of racial groups included in study?
 # show piechart of race/ethnicity
