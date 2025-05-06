@@ -23,4 +23,21 @@ A Jupyter Notebook was created to showcase:
 
 [View Jupyter Notebook](main.ipynb)
 
+## Usage
+To properly view this Jupyter notebook:
+1. Create a virtual environment
+2. Install Dependencies 
+    By running 
+       ```sh
+   pip install -r requirements.txt
+   ```
+    you are able to download all the dependencies needed for this Jupyter notebook to run.
+3. Run Notebook
+
+# Key Findings
+* There are notable racial and ethnic differences in RSV vaccination rates among pregnant women.
+* Hispanic/Latino women had the highest unvaccinated rates for four consecutive weeks, but they also made up the largest demographic group in the study.
+* White women had the second-highest unvaccinated rates and were close behind Hispanic women in the first week.
+* Asian and White women consistently had the highest vaccination rates over time, while Black and Hispanic women had the lowest.
+* These trends suggest potential disparities, but further analysis is needed to determine if differences are due to unequal access or the demographic makeup of the study population.
 
