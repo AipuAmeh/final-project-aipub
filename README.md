@@ -29,9 +29,9 @@ To properly view this Jupyter notebook:
 2. Install Dependencies 
     By running 
        ```sh
-   pip install -r requirements.txt
    ```
-    you are able to download all the dependencies needed for this Jupyter notebook to run.
+       pip install -r requirements.txt
+   you are able to download all the dependencies needed for this Jupyter notebook to run.
 3. Run Notebook
 
 # Key Findings
