@@ -32,7 +32,7 @@ To properly view this Jupyter notebook:
        pip install -r requirements.txt
 3. Run Notebook
 
-# Key Findings
+## Key Findings
 * There are notable racial and ethnic differences in RSV vaccination rates among pregnant women.
 * Hispanic/Latino women had the highest unvaccinated rates for four consecutive weeks, but they also made up the largest demographic group in the study.
 * White women had the second-highest unvaccinated rates and were close behind Hispanic women in the first week.
