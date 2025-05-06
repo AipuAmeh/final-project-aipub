@@ -27,11 +27,11 @@ A Jupyter Notebook was created to showcase:
 To properly view this Jupyter notebook:
 1. Create a virtual environment
 2. Install Dependencies 
-    By running 
-       ```sh
+    To downloard all the dependencies needed for this Jupyter notebook to run, use the following code: 
+       ```
    ```
        pip install -r requirements.txt
-   you are able to download all the dependencies needed for this Jupyter notebook to run.
+
 3. Run Notebook
 
 # Key Findings
