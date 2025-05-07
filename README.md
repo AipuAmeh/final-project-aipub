@@ -1,4 +1,4 @@
-# RSV Disparities Among Pregnant Women
+# RSV Vaccine Disparities Among Pregnant Women
 
 ## Research Question
 * Are there specific racial disparities in weekly RSV vaccination coverage rates among pregnant women?
