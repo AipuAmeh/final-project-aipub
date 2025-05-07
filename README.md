@@ -8,9 +8,9 @@
 
 ## Objective
 This milestone focused on leveraging Python to analyze and visualize data to answer specific research questions. The Jupyter Notebook demonstrates the process of:
-    * Data Retrieval and cleaning
-    * Data analysis
-    * Data visualization
+* Data Retrieval and cleaning
+* Data analysis
+* Data visualization
 
 ## Research Topic
 This work seeks to explore whether or not there are notable differences between pregnant women of varying demographics receiving the RSV vaccine.
